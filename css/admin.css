@@ -1,0 +1,62 @@
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.summary-kategori {
+  background-color: #42b6f5;
+  border-radius: 15px;
+}
+
+.summary-produk {
+  background-color: #635fcf;
+  border-radius: 15px;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+.bi-produk {
+  margin-left: 20px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 150px;
+  padding: 20px;
+}
+
+.icon-logo img {
+  width: 400px;
+  max-width: 400px;
+  margin-right: 80px;
+  margin-bottom: 70px;
+}
+
+@media (max-width: 768px) {
+  .box-login {
+    margin-left: 0; /* Hapus margin kiri */
+  }
+  .icon-logo img {
+    max-width: 70%;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+    }
+}

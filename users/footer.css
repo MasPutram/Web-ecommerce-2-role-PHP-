@@ -1,0 +1,129 @@
+.contact{
+    position: relative;
+    min-height: 50vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.containerBox{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.containerContact{
+    margin-left: 5px;
+
+}
+
+.contact  .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.contact  .contactInfo .box1{
+    position: relative;
+    padding: 10px 0;
+}
+
+.contact  .contactInfo .box1 .text{
+    display: flex;
+    margin-left: 20px;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+.contact  .contactInfo .box1 .text h3{ 
+    font-size: 15px;
+}
+
+.contactForm{
+    width: 40%;
+    padding: 5px;
+}
+
+.contactForm h2{
+    font-size: 15px;
+}
+
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid ;
+    outline: none;
+    resize: none;
+    background-color: #EEF7FF;
+    font-size: 13px;
+}
+
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    background-color: #CDE8E5;
+}
+
+@media (max-width: 768px) {
+    .containerBox {
+        flex-direction: column;
+    }
+
+    .contactInfo,
+    .contactForm {
+        min-width: 100%;
+    }
+}
+
+@media (maxeidth: 991px){
+    .contact{
+        padding: 50px;
+    }
+    .containerBox{
+        flex-direction: column;
+    }
+    .containerBox .contactInfo{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .containerBox .contactInfo,
+    .contactForm{
+        width: 100%;
+    }
+}

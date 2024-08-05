@@ -1,0 +1,14 @@
+.carousel-img{
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-img {
+    margin: 0 auto;
+}
+
+/* Atur lebar maksimum sesuai kebutuhan */
+.carousel-img img {
+    max-width: 100%;
+}

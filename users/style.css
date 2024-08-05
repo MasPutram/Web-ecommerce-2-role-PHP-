@@ -1,0 +1,155 @@
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.warna1 {
+  background-color: #cde8e5;
+}
+
+.warna2 {
+  background-color: #eef7ff;
+}
+
+.warna3 {
+  background-color: #7ab2b2;
+}
+
+.warna4 {
+  background-color: #4d869c;
+}
+
+.navi {
+  transition: background-color 0.5s ease-in-out;
+}
+
+.navi.scrolled {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.8
+  ); /* Warna dan transparansi yang diinginkan */
+}
+
+.banner {
+  height: 70vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../image/page/banner2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.box {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-produk1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../image/page/Hepi.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.new-produk2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../image/page/jago78.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.new-produk3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../image/page/riski49.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.new-produk4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../image/page/hepi23.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.sall {
+  border: 2px solid rgb(48, 47, 81);
+  border-top-width: 2px;
+  border-right-width: 2px;
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+  padding: 5px 30px;
+}
+
+.no-decoration {
+  text-decoration: none;
+  color: rgb(48, 47, 81);
+}
+
+.no-decoration:hover {
+  color: #cde8e5;
+}
+
+.box-about {
+  height: auto;
+  width: 200px;
+  background: url(../image/page/Logo.jpg);
+}
+
+.image-box {
+  height: 300px;
+}
+
+.image-box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.kartu {
+  margin-bottom: 20px;
+}
+
+/*spacing*/
+
+.paragraph-spacing {
+  line-height: 0; /* Anda bisa mengubah nilai ini sesuai kebutuhan */
+}
+
+/* footer */
+.ts {
+  text-size-adjust: 0;
+  font-size: 10px;
+}
+
+.buyDecor {
+  text-decoration: none;
+  color: white;
+}
+
+.buyDecor:hover {
+  color: #7ab2b2;
+}
+
+@media (max-width: 768px) {
+  .kartu {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .kartu {
+    margin-bottom: 10px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+    }
+}
